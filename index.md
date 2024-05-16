@@ -10,6 +10,8 @@ Here is **Pinzhong Zheng (郑品忠)**.
 
 I am pursuing a Master's degree in the Department of Mathematics at Southern University of Science and Technology, under the supervision of [Prof. Xiaoming Wang](https://sites.mst.edu/wangxiaoming/). My research primarily focuses on numerical solutions to differential equations. Currently, I am serving as a research assistant at the School of Science and Technology, The Chinese University of Hong Kong, Shenzhen, advised by [Prof. Chaoyu Quan](https://sites.google.com/site/quanchaoyu/home).
 
+If you are interested in any aspect of me, I would love to chat and collaborate, please email me at - *zhengpinzhong@outlook.com*
+
 ## Academic Background
 
 - **Sep 2022 - June 2024:** Southern University of Science and Technology (M.Sc. in Mathematics)
