@@ -14,8 +14,8 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 
 ## Academic Background
 
-- **Sep 2022 - June 2024:** Southern University of Science and Technology (M.Sc. in Mathematics)
-- **Sep 2018 - June 2022:** Wuhan University (B.Sc. in Mathematics)
+- **Sep 2022 - Jun 2024:** Southern University of Science and Technology (M.Sc. in Mathematics)
+- **Sep 2018 - Jun 2022:** Wuhan University (B.Sc. in Mathematics)
 
 ---
 
