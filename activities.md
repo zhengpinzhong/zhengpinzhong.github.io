@@ -1,15 +1,18 @@
 ---
 layout: page
-permalink: /teams/index.html
-title: Teams
+permalink: /activities/index.html
+title: Activities
 ---
 
-- **Jun 2022：**Graduated from Wuhan University.
+> Lastest Update: 16th May 2024 &nbsp; 
 
-- **Sep 2022：**Started to pursue my master's degree at SUSTech.
+- **Jun 2022: **Graduated from Wuhan University.
 
-- **Jan 2024：**Conducted an academic visit to CUHKSZ.
+- **Sep 2022: **Started to pursue my master's degree at SUSTech.
 
-- **Apr 2024：**Gave a presentation at the 2024 National Outstanding Graduate Students Workshop supported by SSE, CUHKSZ.
+- **Jan 2024: **Conducted an academic visit to CUHKSZ.
+
+- **Apr 2024: **Gave a presentation at the 2024 National Outstanding Graduate Students Workshop supported by SSE, CUHKSZ.
 
   
+
