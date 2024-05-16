@@ -8,7 +8,7 @@ layout: page
 
 Here is **Pinzhong Zheng (郑品忠)**.
 
-I am currently pursuing a Master's degree in the Department of Mathematics at Southern University of Science and Technology, under the supervision of [Prof. Wang Xiaoming](https://sites.mst.edu/wangxiaoming/). My primary area of research focuses on the numerical solutions of differential equations. Currently, I serve as a research assistant at the School of Science and Technoly, The Chinese University of Hongkong, Shenzhen, advised by [Prof. Chaoyu Quan](https://sites.google.com/site/quanchaoyu/home).
+I am pursuing a Master's degree in the Department of Mathematics at Southern University of Science and Technology, under the supervision of [Prof. Xiaoming Wang](https://sites.mst.edu/wangxiaoming/). My research primarily focuses on numerical solutions to differential equations. Currently, I am serving as a research assistant at the School of Science and Technology, The Chinese University of Hong Kong, Shenzhen, advised by [Prof. Chaoyu Quan](https://sites.google.com/site/quanchaoyu/home).
 
 ## Academic Background
 
