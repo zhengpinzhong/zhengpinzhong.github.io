@@ -25,4 +25,8 @@ If you are interested in any aspect of me, I would love to chat and collaborate,
 
 - Splitting methods for differential equations
 
+---
+
+## Contact
+- **Email:** zhengpinzhong@outlook.com; 12232839@mail.sustech.edu.cn
   
