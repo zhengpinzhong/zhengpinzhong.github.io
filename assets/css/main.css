@@ -1766,7 +1766,7 @@ html {
 }
 
 .image-wrap img {
-  width: 100%;
+  width: 40%;
   height: auto;
   -ms-interpolation-mode: bicubic;
 }
