@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="https://zhengpinzhong.github.io/zpz.jpg" class="floatpic">
+<img src="https://zhengpinzhong.github.io/zpz.jpg" class="floatpic" style="zoom:50%;" >
 
 Here is **Pinzhong Zheng (郑品忠)**.
 
@@ -23,10 +23,9 @@ I am pursuing a Master's degree in the Department of Mathematics at Southern Uni
 ## Research Interests
 
 - High accurate methods for phase-field equations
-
 - Splitting methods for differential equations
-
-- test9
+- test10
+- 123
 
 ---
 
