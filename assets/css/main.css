@@ -2941,7 +2941,7 @@ screen and (max-height:300px) {
     width: 16.666666666%;
   }
 }
-
+/*
 @media only screen and (min-width:86.375em) {
   .site-name {
     display: inline;
@@ -2999,6 +2999,6 @@ screen and (max-height:300px) {
     margin-left: 16.666666666666668%;
   }
 }
-
+*/
 @media (-webkit-min-device-pixel-ratio:2),
 (min-resolution:192dpi) {}
