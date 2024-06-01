@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="https://zhengpinzhong.github.io/zpz.jpg" class="floatpic" style="zoom:50%;" >
+<img src="https://zhengpinzhong.github.io/zpz.jpg" class="floatpic" height="360" >
 
 Here is **Pinzhong Zheng (郑品忠)**.
 
@@ -15,7 +15,6 @@ I am pursuing a Master's degree in the Department of Mathematics at Southern Uni
 ## Academic Background
 
 - M.Sc. in Mathematics, Southern University of Science and Technology, Jun 2024. (Supervisor: [Xiaoming Wang](https://sites.mst.edu/wangxiaoming/))
-
 - B.Sc. in Mathematics, Wuhan University, Jun 2022.
 
 ---
@@ -24,8 +23,6 @@ I am pursuing a Master's degree in the Department of Mathematics at Southern Uni
 
 - High accurate methods for phase-field equations
 - Splitting methods for differential equations
-- test10
-- 123
 
 ---
 
