@@ -15,6 +15,7 @@ I am pursuing a Master's degree in the Department of Mathematics at Southern Uni
 ## Academic Background
 
 - **Sep 2022 - Jun 2024:** Southern University of Science and Technology (M.Sc. in Mathematics)
+
 - **Sep 2018 - Jun 2022:** Wuhan University (B.Sc. in Mathematics)
 
 ---
@@ -28,4 +29,5 @@ I am pursuing a Master's degree in the Department of Mathematics at Southern Uni
 ---
 
 ## Contact
+
 - **Email:** *zhengpinzhong@outlook.com*; *12232839@mail.sustech.edu.cn*
