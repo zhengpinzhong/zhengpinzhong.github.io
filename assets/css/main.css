@@ -2947,17 +2947,17 @@ screen and (max-height:300px) {
     display: inline;
     float: left;
     width: 12.5%;
-    margin-left: 16.666666666666668%;
+    margin-left: 5%;
   }
 
   .top-navigation {
     display: inline;
     float: left;
-    width: 66.66666666666667%;
+    width: 80%;
   }
 
   .image-wrap:after {
-    left: 33.333333333%;
+    left: 20.333333333%;
   }
 
   .image-wrap .headline-wrap {
