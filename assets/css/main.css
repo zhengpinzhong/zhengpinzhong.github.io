@@ -1683,6 +1683,7 @@ html {
   counter-reset: captions;
   margin: 0 auto;
   width: 100%;
+  max-width: 100%;/* 新增这行，确保最大宽度也是100% */
   *zoom: 1;
   clear: both;
   margin-top: 1em;
