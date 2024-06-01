@@ -28,7 +28,7 @@ audio:not([controls]) {
   display: none;
 }
 
-/*
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -38,20 +38,7 @@ html {
 body {
   margin: 0;
 }
-*/
 
-html,
-body {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  width: 100%;
-  /* 新增这行，确保宽度为100% */
-  margin: 0;
-  /* 新增这行，去除默认外边距 */
-  padding: 0;
-  /* 新增这行，去除默认内边距 */
-}
 
 
 a:focus {
@@ -371,7 +358,6 @@ body {
 
 h1 {
   font-size: 38px;
-  font-size: 3.3333333333333335rem;
   margin-bottom: 0.495rem;
   text-rendering: optimizeLegibility;
   line-height: 1;
@@ -380,7 +366,6 @@ h1 {
 
 h2 {
   font-size: 32px;
-  font-size: 2.6666666666666665rem;
   margin-bottom: 0.61875rem;
   text-rendering: optimizeLegibility;
   line-height: 1;
@@ -389,7 +374,6 @@ h2 {
 
 h3 {
   font-size: 27px;
-  font-size: 2rem;
   margin-bottom: 0.825rem;
   text-rendering: optimizeLegibility;
   line-height: 1;
@@ -398,7 +382,6 @@ h3 {
 
 h4 {
   font-size: 24px;
-  font-size: 1.3333333333333333rem;
   margin-bottom: 1.2375rem;
   text-rendering: optimizeLegibility;
   line-height: 1;
@@ -407,7 +390,6 @@ h4 {
 
 h5 {
   font-size: 21px;
-  font-size: 1.1666666666666667rem;
   margin-bottom: 1.4142857142857141rem;
   text-rendering: optimizeLegibility;
   line-height: 1;
@@ -416,7 +398,6 @@ h5 {
 
 h6 {
   font-size: 18px;
-  font-size: 1rem;
   margin-bottom: 1.65rem;
   text-rendering: optimizeLegibility;
   line-height: 1;
