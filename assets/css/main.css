@@ -2934,7 +2934,7 @@ screen and (max-height:300px) {
 
 @media only screen and (min-width:62em) {
   html {
-    font-size: 112.5%;
+    font-size: 105%;
   }
 
   .image-grid li {
