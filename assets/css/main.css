@@ -2953,7 +2953,7 @@ screen and (max-height:300px) {
   .top-navigation {
     display: inline;
     float: left;
-    width: 66.66666666666667%;
+    width: 90%;
   }
 
   .image-wrap:after {
