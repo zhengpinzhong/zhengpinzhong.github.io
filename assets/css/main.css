@@ -2860,7 +2860,7 @@ screen and (max-height:300px) {
   #main article {
     display: inline;
     float: left;
-    width: 70%;
+    width: 60%;
     margin-left: 0%;
     margin-right: 0%;
   }
@@ -2868,7 +2868,7 @@ screen and (max-height:300px) {
   #index {
     display: inline;
     float: left;
-    width: 70%;
+    width: 60%;
     margin-left: 0%;
     margin-right: 0%;
   }
@@ -2876,7 +2876,7 @@ screen and (max-height:300px) {
   .footer-wrap footer {
     display: inline;
     float: left;
-    width: 70%;
+    width: 60%;
     margin-left: 15%;
     margin-right: 15%;
   }
@@ -2967,13 +2967,13 @@ screen and (max-height:300px) {
   #main article {
     display: inline;
     float: left;
-    width: 75%;
+    width: 65%;
   }
 
   #index {
     display: inline;
     float: left;
-    width: 75%;
+    width: 65%;
   }
 
   .related-articles {

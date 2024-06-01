@@ -23,7 +23,6 @@ I am pursuing a Master's degree in the Department of Mathematics at Southern Uni
 
 - High accurate methods for phase-field equations
 - Splitting methods for differential equations
-- test2
 
 ---
 
