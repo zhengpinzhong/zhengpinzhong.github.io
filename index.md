@@ -12,20 +12,20 @@ I am pursuing a Master's degree in the Department of Mathematics at Southern Uni
 
 ---
 
-## Academic Background
+# Academic Background
 
 - M.Sc. in Mathematics, Southern University of Science and Technology, Jun 2024. (Supervisor: [Xiaoming Wang](https://sites.mst.edu/wangxiaoming/))
 - B.Sc. in Mathematics, Wuhan University, Jun 2022.
 
 ---
 
-## Research Interests
+# Research Interests
 
 - High accurate methods for phase-field equations
 - Splitting methods for differential equations
 
 ---
 
-## Contact
+# Contact
 
 - **Email:** *zhengpinzhong@outlook.com*; *12232839@mail.sustech.edu.cn*
