@@ -354,16 +354,7 @@ body {
 }
 
 h1 {
-  font-size: 42px;
-  font-size: 3.3333333333333335rem;
-  margin-bottom: 0.495rem;
-  text-rendering: optimizeLegibility;
-  line-height: 1;
-  margin-top: 0;
-}
-
-h2 {
-  font-size: 36px;
+  font-size: 48px;
   font-size: 2.6666666666666665rem;
   margin-bottom: 0.61875rem;
   text-rendering: optimizeLegibility;
@@ -371,8 +362,8 @@ h2 {
   margin-top: 0;
 }
 
-h3 {
-  font-size: 30px;
+h2 {
+  font-size: 36px;
   font-size: 2rem;
   margin-bottom: 0.825rem;
   text-rendering: optimizeLegibility;
@@ -380,7 +371,7 @@ h3 {
   margin-top: 0;
 }
 
-h4 {
+h3 {
   font-size: 24px;
   font-size: 1.3333333333333333rem;
   margin-bottom: 1.2375rem;
@@ -389,10 +380,19 @@ h4 {
   margin-top: 0;
 }
 
-h5 {
+h4 {
   font-size: 21px;
   font-size: 1.1666666666666667rem;
   margin-bottom: 1.4142857142857141rem;
+  text-rendering: optimizeLegibility;
+  line-height: 1;
+  margin-top: 0;
+}
+
+h5 {
+  font-size: 18px;
+  font-size: 1rem;
+  margin-bottom: 1.65rem;
   text-rendering: optimizeLegibility;
   line-height: 1;
   margin-top: 0;
