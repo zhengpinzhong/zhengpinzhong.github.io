@@ -4,7 +4,7 @@ layout: page
 
 # About Me
 
-<img src="https://zhengpinzhong.github.io/zpz.jpg" class="floatpic" height="360" >
+<img src="https://zhengpinzhong.github.io/zpz.jpg" class="floatpic" height="150" >
 
 Here is **Pinzhong Zheng (郑品忠)**.
 
