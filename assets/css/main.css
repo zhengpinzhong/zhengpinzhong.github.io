@@ -2967,13 +2967,13 @@ screen and (max-height:300px) {
   #main article {
     display: inline;
     float: left;
-    width: 50%;
+    width: 75%;
   }
 
   #index {
     display: inline;
     float: left;
-    width: 50%;
+    width: 75%;
   }
 
   .related-articles {
