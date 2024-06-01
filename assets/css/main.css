@@ -28,6 +28,7 @@ audio:not([controls]) {
   display: none;
 }
 
+/*
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -37,6 +38,21 @@ html {
 body {
   margin: 0;
 }
+*/
+
+html,
+body {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  width: 100%;
+  /* 新增这行，确保宽度为100% */
+  margin: 0;
+  /* 新增这行，去除默认外边距 */
+  padding: 0;
+  /* 新增这行，去除默认内边距 */
+}
+
 
 a:focus {
   outline: thin dotted;
@@ -1683,7 +1699,8 @@ html {
   counter-reset: captions;
   margin: 0 auto;
   width: 100%;
-  max-width: 100%;/* 新增这行，确保最大宽度也是100% */
+  max-width: 100%;
+  /* 新增这行，确保最大宽度也是100% */
   *zoom: 1;
   clear: both;
   margin-top: 1em;
