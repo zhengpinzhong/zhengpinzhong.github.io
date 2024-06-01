@@ -2860,7 +2860,7 @@ screen and (max-height:300px) {
   #main article {
     display: inline;
     float: left;
-    width: 75%;
+    width: 70%;
     margin-left: 0%;
     margin-right: 0%;
   }
@@ -2868,7 +2868,7 @@ screen and (max-height:300px) {
   #index {
     display: inline;
     float: left;
-    width: 50%;
+    width: 70%;
     margin-left: 0%;
     margin-right: 0%;
   }
@@ -2876,9 +2876,9 @@ screen and (max-height:300px) {
   .footer-wrap footer {
     display: inline;
     float: left;
-    width: 75%;
-    margin-left: 25%;
-    margin-right: 25%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 
   .article-author-top {
@@ -2938,7 +2938,7 @@ screen and (max-height:300px) {
   }
 
   .image-grid li {
-    width: 16.666666666%;
+    width: 10.666666666%;
   }
 }
 
