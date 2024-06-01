@@ -1747,9 +1747,6 @@ html {
   text-indent: 0;
 }
 
-#index article p+p {
-  text-indent: 0;
-}
 
 .image-wrap {
   position: relative;
