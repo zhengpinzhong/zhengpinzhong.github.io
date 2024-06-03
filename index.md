@@ -15,7 +15,7 @@ I am pursuing a Master's degree in the Department of Mathematics at Southern Uni
 # Academic Background
 
 - M.Sc. in Mathematics, Southern University of Science and Technology, Jun 2024. (Supervisor: [Xiaoming Wang](https://sites.mst.edu/wangxiaoming/))
-- B.Sc. in Mathematics, Wuhan University, Jun 2022.
+- B.Sc. in Mathematics, Wuhan University, Jul 2022.
 
 ---
 
