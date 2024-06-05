@@ -1797,9 +1797,9 @@ html {
 }
 
 .article-wrap h2 {
-  font-size: 36px;
-  font-size: 2rem;
-  margin-bottom: 0.825rem;
+  font-size: 24px;
+  font-size: 1.3333333333333333rem;
+  margin-bottom: 1.2375rem;
 }
 
 .article-wrap h3 {
