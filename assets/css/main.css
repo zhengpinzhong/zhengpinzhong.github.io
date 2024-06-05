@@ -1803,9 +1803,9 @@ html {
 }
 
 .article-wrap h3 {
-  font-size: 24px;
-  font-size: 1.3333333333333333rem;
-  margin-bottom: 1.2375rem;
+  font-size: 18px;
+  font-size: 1rem;
+  margin-bottom: 1.65rem;
 }
 
 .byline {
