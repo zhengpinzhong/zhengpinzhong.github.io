@@ -26,4 +26,4 @@ I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong 
 
 # Contact
 
-- **Email:** *zhengpinzhong@outlook.com*
+- **Email:** *zhengpinzhong@outlook.com; pinzhong.zheng@connect.polyu.hk*
