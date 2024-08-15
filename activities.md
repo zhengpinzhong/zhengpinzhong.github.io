@@ -6,7 +6,7 @@ title: Activities
 
 > Lastest Update: 19th Jul 2024
 
-- **Jul 2022:** [My thesis was awarded the title of Excellent Master's Thesis at SuStech.](https://zhengpinzhong.github.io/images/Sustech_excellent_thesis.png)
+- **Jul 2022:** [My thesis was awarded the title of Excellent Master's Thesis at SUSTech.](https://zhengpinzhong.github.io/images/Sustech_excellent_thesis.png)
 - **Jul 2022:** [Graduated from Southern University of Science and Technology.](https://zhengpinzhong.github.io/images/Sustech2.jpg)
 - **Apr 2024:** [Gave a presentation at the 2024 National Outstanding Graduate Students Workshop supported by SSE, CUHKSZ.](https://zhengpinzhong.github.io/images/xlmf1.jpg)
 - **Jan 2024:** [Conducted an academic visit to CUHKSZ.](https://zhengpinzhong.github.io/images/CUHKSZ_labr.jpg)
