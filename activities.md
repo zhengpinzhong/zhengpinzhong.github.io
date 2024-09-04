@@ -4,7 +4,7 @@ permalink: /activities/index.html
 title: Activities
 ---
 
-> Lastest Update: 19th Jul 2024
+> Lastest Update: 4th Sep 2024
 
 - **Sep 2024:** [Started to pursue a PhD at PolyU in HK.](https://zhengpinzhong.github.io/images/PolyU_new_PhD.jpg)
 - **Jul 2024:** [My thesis was awarded the title of Excellent Master's Thesis at SUSTech.](https://zhengpinzhong.github.io/images/Sustech_excellent_thesis.png)
