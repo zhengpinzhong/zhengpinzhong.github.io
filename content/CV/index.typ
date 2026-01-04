@@ -2,16 +2,38 @@
 #show: template.with(title: "Edward R. Tufte")
 #import "@preview/citegeist:0.2.0": load-bibliography
 
-= Edward R. Tufte
+= Pinzhong Zheng
 
 #tufted.margin-note[
-  Statistician, Artist, and Professor Emeritus \
-  Website: #link("https://www.edwardtufte.com")[edwardtufte.com] \
-  Email: #link("mailto:noreply@edwardtufte.com", "noreply@edwardtufte.com")
+  Website: #link("https://zhengpinzhong.github.io/")[zhengpinzhong.github.io] \
+  Email: #link("mailto:pinzhong.zheng@connect.polyu.hk", "pinzhong.zheng@connect.polyu.hk") \
+  Address: M303, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong
 ]
 
 #link("CV_ZPZ_PDF.pdf")[[PDF version is available, click me.]]
 
+
+== Education
+
+- *09/2024--Present*: Ph.D. Student in Applied Mathematics, The Hong Kong Polytechnic University (PolyU).
+- *09/2022--06/2024*: M.Sc. in Mathematics, Southern University of Science and Technology (SUSTech).
+- *09/2018--07/2022*: B.Sc. in Mathematics, Wuhan University.
+
+== Papers
+
+#{
+  let bib = load-bibliography(read("../Pubs/papers_zpz.bib"))
+  for item in bib.values().rev() [
+    #let data = item.fields
+    - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
+  ]
+}
+
+
+
+
+
+/*
 Research in statistical evidence and analytical design for information visualization, integrating principles from statistics, graphic design, and cognitive science for the effective presentation of quantitative data.
 
 == Experience
@@ -62,3 +84,4 @@ Development of sparklines, a method for embedding high-resolution data graphics 
 - PhD in Political Science: Yale University (1968).
 - MS in Statistics: Stanford University.
 - BS in Statistics: Stanford University.
+*/

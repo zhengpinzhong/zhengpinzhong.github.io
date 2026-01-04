@@ -2,12 +2,11 @@
 #set page(height: auto)
 #show link: it => underline(it)
 
-= Pinzhong Zheng: #text(weight: "regular", size: 0.9em)[Applied Mathematics Ph.D. Student at PolyU]
+= Pinzhong Zheng: 
 
 Website: #link("https://zhengpinzhong.github.io/")[zhengpinzhong.github.io]
-
-Email: #link("mailto:pinzhong.zheng@connect.polyu.hk", "pinzhong.zheng@connect.polyu.hk")
-
+#h(3em)  
+Email: #link("mailto:pinzhong.zheng@connect.polyu.hk", "pinzhong.zheng@connect.polyu.hk") \ 
 Address: M303, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong
 
 == Education
