@@ -2,6 +2,12 @@
 #show: template.with(title: "Publications")
 #import "@preview/citegeist:0.2.0": load-bibliography
 
+
+
+
+= Publications
+
+#tufted.full-width[
 #{
   let bib = load-bibliography(read("my_papers.bib"))
   for item in bib.values().rev() [
@@ -9,9 +15,7 @@
     - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
   ]
 }
-
-
-= Publications
+]
 
 
 
