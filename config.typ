@@ -7,7 +7,7 @@
   header-links: (
     "/": "Home",
     //"/Docs/": "Docs",
-    "Pubs/": "Pubs",
+    "/Pubs/": "Pubs",
     "/Blog/": "Blog",
     "/CV/": "CV",
   ),
