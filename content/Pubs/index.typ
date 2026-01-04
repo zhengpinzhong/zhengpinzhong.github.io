@@ -1,12 +1,28 @@
 #import "../index.typ": template, tufted
 #show: template.with(title: "Publications")
+#import "@preview/citegeist:0.2.0": load-bibliography
 
-= 发表成果 / Publications
+#{
+  let bib = load-bibliography(read("my_papers.bib"))
+  for item in bib.values().rev() [
+    #let data = item.fields
+    - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
+  ]
+}
 
+
+= Publications
+
+
+
+
+
+
+/*
 - C. Quan, PZ and Z. Zhou. #link("https://arxiv.org/abs/2504.09874")[Maximum bound preservation of exponential integrators for Allen--Cahn equations.] *arXiv*:2504.09874v1 (2025).
 
 - C. Quan, X. Wang, PZ and Z. Zhou. #link("https://doi.org/10.1093/imanum/draf069")[Maximum bound principle and original energy dissipation of arbitrarily high-order rescaled exponential time differencing Runge--Kutta schemes for Allen--Cahn equations.] *IMA Journal of Numerical Analysis* (2025) 00, 1-34.
-
+*/
 
 /*
 == 2025
