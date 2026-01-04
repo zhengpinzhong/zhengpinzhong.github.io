@@ -8,9 +8,9 @@
     "/": "Home",
     //"/Docs/": "Docs",
     "/Pubs/": "Pubs",
-    "/Blog/": "Blog",
     "/CV/": "CV",
+    "/Blog/": "Blog",
   ),
   lang: "en",
-  title: "Pinzhong Zheng | Applied Mathematics Ph.D. Student at PolyU",  // 你的网站在浏览器中显示的标题
+  title: "Pinzhong Zheng | Numerical Mathematics",  // 你的网站在浏览器中显示的标题
 )

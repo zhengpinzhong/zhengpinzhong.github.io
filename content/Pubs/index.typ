@@ -1,5 +1,5 @@
 #import "../index.typ": template, tufted
-#show: template.with(title: "Publications")
+#show: template.with(title: "Pinzhong Zheng | Publications")
 #import "@preview/citegeist:0.2.0": load-bibliography
 
 
