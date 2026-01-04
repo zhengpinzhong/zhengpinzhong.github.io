@@ -22,7 +22,7 @@
 
 = About Me
 
-Here is *Pinzhong Zheng (郑品忠)*.
+Here is *Pinzhong ZHENG (郑品忠)*.
 
 I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong Polytechnic University (PolyU) under the supervision of #link("https://sites.google.com/site/zhizhou0125/home")[Prof. Zhi Zhou]. I previously earned an M.S. from the Department of Mathematics at Southern University of Science and Technology (SUSTech) under the supervision of #link("https://person.eitech.edu.cn/lxb/wxm/main.htm")[Prof. Xiaoming Wang]. In 2024, before joining PolyU, I worked as a research assistant at The Chinese University of Hong Kong, Shenzhen (CUHKSZ), under the guidance of #link("https://sites.google.com/site/quanchaoyu/home")[Prof. Chaoyu Quan]. My research primarily focuses on numerical solutions to partial differential equations.
 
@@ -40,10 +40,7 @@ I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong 
 
 == Contact
 
-//- *Email*: pinzhong.zheng@connect.polyu.hk
-
-
-
+- *Email*: pinzhong.zheng\@connect.polyu.hk
 
 
 
