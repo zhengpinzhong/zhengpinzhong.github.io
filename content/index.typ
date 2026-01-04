@@ -40,7 +40,7 @@ I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong 
 
 == Contact
 
-- *Email:* pinzhong.zheng@connect.polyu.hk
+//- *Email*: pinzhong.zheng@connect.polyu.hk
 
 
 
