@@ -45,8 +45,8 @@ I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong 
 - *Email*: #link("mailto:pinzhong.zheng@connect.polyu.hk", "pinzhong.zheng@connect.polyu.hk")
 
 
-== CV
-- #link("CV_ZPZ_PDF.pdf")[[PDF version is available, click me.]]
+//== CV
+//- #link("CV_ZPZ_PDF.pdf")[[PDF version is available, click me.]]
 
 
 

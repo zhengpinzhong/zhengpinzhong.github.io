@@ -9,7 +9,7 @@
     //"/Docs/": "Docs",
     "/Pubs/": "Pubs",
     "/Blog/": "Blog",
-    //"/CV/": "CV",
+    "/CV/": "CV",
   ),
   lang: "en",
   title: "Pinzhong Zheng | Applied Mathematics Ph.D. Student at PolyU",  // 你的网站在浏览器中显示的标题

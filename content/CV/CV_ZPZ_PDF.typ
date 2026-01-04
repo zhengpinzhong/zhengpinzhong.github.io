@@ -2,14 +2,32 @@
 #set page(height: auto)
 #show link: it => underline(it)
 
-= Edward R. Tufte: #text(weight: "regular", size: 0.9em)[Statistician, Artist, and Professor Emeritus]
+= Pinzhong Zheng: #text(weight: "regular", size: 0.9em)[Applied Mathematics Ph.D. Student at PolyU]
 
-Website: #link("https://www.edwardtufte.com")[edwardtufte.com]
-#h(3em)
-Email: #link("mailto:noreply@edwardtufte.com", "noreply@edwardtufte.com")
+Website: #link("https://zhengpinzhong.github.io/")[zhengpinzhong.github.io]
 
-Research in statistical evidence and analytical design for information visualization, integrating principles from statistics, graphic design, and cognitive science for the effective presentation of quantitative data.
+Email: #link("mailto:pinzhong.zheng@connect.polyu.hk", "pinzhong.zheng@connect.polyu.hk")
 
+Address: M303, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong
+
+== Education
+
+- *09/2024--Present*: Ph.D. Student in Applied Mathematics, The Hong Kong Polytechnic University (PolyU).
+- *09/2022--06/2024*: M.Sc. in Mathematics, Southern University of Science and Technology (SUSTech).
+- *09/2018--07/2022*: B.Sc. in Mathematics, Wuhan University.
+
+== Papers
+
+#{
+  let bib = load-bibliography(read("../Pubs/papers_zpz.bib"))
+  for item in bib.values().rev() [
+    #let data = item.fields
+    - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
+  ]
+}
+
+
+/*
 == Experience
 
 - *1983--Present*: Founder & Publisher, Graphics Press. Independent publishing house specializing in information design and data visualization.
@@ -50,9 +68,5 @@ Development of sparklines, a method for embedding high-resolution data graphics 
     - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
   ]
 }
+*/
 
-== Education
-
-- PhD in Political Science: Yale University (1968).
-- MS in Statistics: Stanford University.
-- BS in Statistics: Stanford University.

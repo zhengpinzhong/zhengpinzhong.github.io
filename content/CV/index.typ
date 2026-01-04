@@ -10,7 +10,7 @@
   Email: #link("mailto:noreply@edwardtufte.com", "noreply@edwardtufte.com")
 ]
 
-#link("CV-PDF.pdf")[[PDF version is available! Click me!]]
+#link("CV_ZPZ_PDF.pdf")[[PDF version is available, click me.]]
 
 Research in statistical evidence and analytical design for information visualization, integrating principles from statistics, graphic design, and cognitive science for the effective presentation of quantitative data.
 
