@@ -3,18 +3,58 @@
 
 // tufted.margin-note 可以让你在边栏中放置内容
 // 宽大的边栏是 tufte 样式的特点，将注释放于其中并与正文并排，便于对照
+#tufted.margin-note[
+  PINZHONG ZHENG (郑品忠)
+]
+
 #tufted.margin-note({
-  image("imgs/tufted-duck-female-with-duckling.webp")
-  image("imgs/tufted-duck-male.webp")
+  image("imgs/zpz_daffcy.webp")
 })
 
+/*
 #tufted.margin-note[
   凤头潜鸭（学名 _Aythya fuligula_）是一种中型潜水鸭，原生于欧亚大陆。凭借卓越的潜水能力，它们能深入水下捕食猎物。
 ]
 #tufted.margin-note[
   The tufted duck (_Aythya fuligula_) is a medium-sized diving duck native to Eurasia. Known for its diving ability, it can plunge to great depths to forage for food.
 ]
+*/
 
+= About Me
+
+Here is *Pinzhong Zheng (郑品忠)*.
+
+I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong Polytechnic University (PolyU) under the supervision of #link("https://sites.google.com/site/zhizhou0125/home")[Prof. Zhi Zhou]. I previously earned an M.S. from the Department of Mathematics at Southern University of Science and Technology (SUSTech) under the supervision of #link("https://person.eitech.edu.cn/lxb/wxm/main.htm")[Prof. Xiaoming Wang]. In 2024, before joining PolyU, I worked as a research assistant at The Chinese University of Hong Kong, Shenzhen (CUHKSZ), under the guidance of #link("https://sites.google.com/site/quanchaoyu/home")[Prof. Chaoyu Quan]. My research primarily focuses on numerical solutions to partial differential equations.
+
+
+== Academic Background
+
+- M.Sc. in Mathematics, Southern University of Science and Technology, Jun 2024.
+- B.Sc. in Mathematics, Wuhan University, Jul 2022.
+
+== Research Interests
+
+- High accurate methods for phase-field models
+- Structure-preserving numerical schemes for gradient flows
+- Dynamical low rank approximation
+
+== Contact
+
+- *Email:* pinzhong.zheng@connect.polyu.hk
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 = Tufted 博客模板
 
 这是一个基于 #link("https://typst.app/")[Typst] 和 #link("https://github.com/vsheg/tufted")[Tufted] 的静态网站构建模板，手把手教你搭建简洁、美观的个人博客、作品集和简历设计。
@@ -34,3 +74,4 @@
 #link("https://edwardtufte.github.io/tufte-css/")[*The Tufte style*] originates from the design philosophy of data visualization master _Edward Tufte_#footnote[Edward Rolf Tufte (/ˈtʌfti/; born March 14, 1942), sometimes known as "ET", is an American statistician and professor emeritus of political science, statistics, and computer science at Yale University. He is noted for his writings on information design and as a pioneer in the field of data visualization.], advocating for a "content-first" approach and minimalism while striving to eliminate all visual noise that distracts from the information.
 
 其最鲜明的特点是采用*宽大的侧边栏布局*，将注释、参考文献和图表直接并排展示在正文旁，取代了传统的脚注或尾注，配合优雅的*衬线字体*与*类纸张背景*，在数字屏幕上复刻了如经典学术著作般清晰、优雅、沉浸的深度阅读体验。
+*/
