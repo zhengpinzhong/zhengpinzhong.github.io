@@ -42,10 +42,11 @@ I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong 
 
 == Contact
 
-- *Email*: pinzhong.zheng\@connect.polyu.hk
+- *Email*: #link("mailto:pinzhong.zheng@connect.polyu.hk", "pinzhong.zheng@connect.polyu.hk")
 
 
-
+== CV
+#link("CV_ZPZ.pdf")[[PDF version is available! Click me!]]
 
 
 
