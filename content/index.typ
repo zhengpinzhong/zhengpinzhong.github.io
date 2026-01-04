@@ -46,7 +46,7 @@ I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong 
 
 
 == CV
-#link("CV_ZPZ.pdf")[[PDF version is available! Click me!]]
+#link("CV_ZPZ_PDF.pdf")[[PDF version is available! Click me!]]
 
 
 
