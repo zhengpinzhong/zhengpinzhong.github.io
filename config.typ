@@ -9,7 +9,7 @@
     //"/Docs/": "Docs",
     "/Pubs/": "Pubs",
     "/CV/": "CV",
-    "/Blog/": "Blog",
+    //"/Blog/": "Blog",
   ),
   lang: "en",
   title: "Pinzhong Zheng | Numerical Mathematics",  // 你的网站在浏览器中显示的标题
