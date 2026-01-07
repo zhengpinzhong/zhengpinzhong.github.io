@@ -9,6 +9,7 @@
 
 #tufted.full-width[
 <<<<<<< HEAD
+<<<<<<< HEAD
   #{
     let bib = load-bibliography(read("arxivs_zpz.bib"))
     let items = bib.values()
@@ -118,6 +119,17 @@
 
 
 
+=======
+#{
+  let bib = load-bibliography(read("papers_zpz.bib"))
+  for item in bib.values().rev() [
+    #let data = item.fields
+    - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
+  ]
+}
+]
+
+>>>>>>> parent of 0d6c532 (Update index.typ)
 =======
 #{
   let bib = load-bibliography(read("papers_zpz.bib"))
