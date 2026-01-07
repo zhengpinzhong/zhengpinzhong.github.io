@@ -15,8 +15,8 @@
     let items = bib.values()
     let items-by-year = (:)
     for item in items [
-      #let data = item.fields
-      #let year = str(data.year)
+      let data = item.fields
+      let year = str(data.year)
       let current-list = if items-by-year.has(year) [
       items-by-year.at(year)
       ] else [
@@ -49,10 +49,10 @@
     ]
     for year in sorted-years [
       == #year
-      #let year-items = items-by-year.at(year)
-      #let num = 1
+      let year-items = items-by-year.at(year)
+      let num = 1
       for item in year-items [
-      #let data = item.fields
+      let data = item.fields
       #num. #data.author, "#data.title," #emph(data.archiveprefix):#data.eprint, #data.year. #link(data.url)[arXiv:#data.eprint]
       #num = num + 1
       ]
@@ -68,8 +68,8 @@
     let items = bib.values()
     let items-by-year = (:)
     for item in items [
-      #let data = item.fields
-      #let year = str(data.year)
+      let data = item.fields
+      let year = str(data.year)
       let current-list = if items-by-year.has(year) [
       items-by-year.at(year)
       ] else [
@@ -102,10 +102,10 @@
     ]
     for year in sorted-years [
       == #year
-      #let year-items = items-by-year.at(year)
-      #let num = 1
+      let year-items = items-by-year.at(year)
+      let num = 1
       for item in year-items [
-      #let data = item.fields
+      let data = item.fields
       #num. #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
       #num = num + 1
       ]
