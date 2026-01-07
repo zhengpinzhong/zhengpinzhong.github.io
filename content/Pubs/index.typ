@@ -7,9 +7,8 @@
 
 = Publications
 
-== Preprints
-
 #tufted.full-width[
+<<<<<<< HEAD
   #{
     let bib = load-bibliography(read("arxivs_zpz.bib"))
     let items = bib.values()
@@ -47,14 +46,16 @@
       sorted-years = new-list
       ]
     ]
-    for year in sorted-years [
-      == #year
-      let year-items = items-by-year.at(year)
-      let num = 1
-      for item in year-items [
-      let data = item.fields
-      #num. #data.author, "#data.title," #emph(data.archiveprefix):#data.eprint, #data.year. #link(data.url)[arXiv:#data.eprint]
-      #num = num + 1
+    [
+      #for year in sorted-years [
+        == #year
+        #let year-items = items-by-year.at(year)
+        #let num = 1
+        #for item in year-items [
+          #let data = item.fields
+          #num. #data.author, "#data.title," #emph(data.archiveprefix):#data.eprint, #data.year. #link(data.url)[arXiv:#data.eprint]
+          #num = num + 1
+        ]
       ]
     ]
   }
@@ -100,14 +101,16 @@
       sorted-years = new-list
       ]
     ]
-    for year in sorted-years [
-      == #year
-      let year-items = items-by-year.at(year)
-      let num = 1
-      for item in year-items [
-      let data = item.fields
-      #num. #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
-      #num = num + 1
+    [
+      #for year in sorted-years [
+        == #year
+        #let year-items = items-by-year.at(year)
+        #let num = 1
+        #for item in year-items [
+          #let data = item.fields
+          #num. #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
+          #num = num + 1
+        ]
       ]
     ]
   }
@@ -115,6 +118,17 @@
 
 
 
+=======
+#{
+  let bib = load-bibliography(read("papers_zpz.bib"))
+  for item in bib.values().rev() [
+    #let data = item.fields
+    - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
+  ]
+}
+]
+
+>>>>>>> parent of 0d6c532 (Update index.typ)
 
 
 
