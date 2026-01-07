@@ -7,15 +7,31 @@
 
 = Publications
 
+== Preprints
+
 #tufted.full-width[
-#{
-  let bib = load-bibliography(read("papers_zpz.bib"))
-  for item in bib.values().rev() [
-    #let data = item.fields
-    - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
-  ]
-}
+  #{
+    let bib = load-bibliography(read("arxivs_zpz.bib"))
+    for item in bib.values().rev() [
+      #let data = item.fields
+      - #data.author, "#data.title," #emph(data.archiveprefix):#data.eprint, #data.year. #link(data.url)[arXiv:#data.eprint]
+    ]
+  }
 ]
+
+== Journal Papers
+
+#tufted.full-width[
+  #{
+    let bib = load-bibliography(read("papers_zpz.bib"))
+    for item in bib.values().rev() [
+      #let data = item.fields
+      - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
+    ]
+  }
+]
+
+
 
 
 
