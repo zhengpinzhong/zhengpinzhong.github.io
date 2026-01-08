@@ -13,14 +13,31 @@
     let bib = load-bibliography(read("arxivs_zpz.bib"))
     let items = array(bib.values())
     let sorted = items.sorted(key: it => int(it.fields.year)).rev()
-    let enum_items = ()
+
+    // 获取所有唯一的年份（降序）
+    let years = ()
     for item in sorted {
-      let data = item.fields
-      enum_items.push(
-        [#data.author, "#data.title," #emph(data.archiveprefix):#data.eprint, #data.year. #link(data.url)[arXiv:#data.eprint]],
-      )
+      let year = item.fields.year
+      if not years.contains(year) {
+        years.push(year)
+      }
     }
-    enum(..enum_items, reversed: true)
+    years = years.sorted(key: it => int(it)).rev()
+
+    // 按年份分组显示
+    for year in years {
+      heading(level: 3, numbering: none)[#year]
+      let enum_items = ()
+      for item in sorted {
+        if item.fields.year == year {
+          let data = item.fields
+          enum_items.push(
+            [#data.author, "#data.title," #emph(data.archiveprefix):#data.eprint, #data.year. #link(data.url)[arXiv:#data.eprint]],
+          )
+        }
+      }
+      enum(..enum_items)
+    }
   }
 ]
 
@@ -31,12 +48,31 @@
     let bib = load-bibliography(read("papers_zpz.bib"))
     let items = array(bib.values())
     let sorted = items.sorted(key: it => int(it.fields.year)).rev()
-    let enum_items = ()
+
+    // 获取所有唯一的年份（降序）
+    let years = ()
     for item in sorted {
-      let data = item.fields
-      enum_items.push([#data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]])
+      let year = item.fields.year
+      if not years.contains(year) {
+        years.push(year)
+      }
     }
-    enum(..enum_items, reversed: true)
+    years = years.sorted(key: it => int(it)).rev()
+
+    // 按年份分组显示
+    for year in years {
+      heading(level: 3, numbering: none)[#year]
+      let enum_items = ()
+      for item in sorted {
+        if item.fields.year == year {
+          let data = item.fields
+          enum_items.push(
+            [#data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]],
+          )
+        }
+      }
+      enum(..enum_items)
+    }
   }
 ]
 
