@@ -11,7 +11,13 @@
 #tufted.full-width[
   #{
     let bib = load-bibliography(read("arxivs_zpz.bib"))
-    for item in bib.values().rev() [
+    let items = array(bib.values())
+    let sorted = items.sort((a, b) => {
+      let year_a = int(a.fields.year)
+      let year_b = int(b.fields.year)
+      if year_a > year_b { -1 } else if year_a < year_b { 1 } else { 0 }
+    })
+    for item in sorted [
       #let data = item.fields
       - #data.author, "#data.title," #emph(data.archiveprefix):#data.eprint, #data.year. #link(data.url)[arXiv:#data.eprint]
     ]
@@ -23,7 +29,13 @@
 #tufted.full-width[
   #{
     let bib = load-bibliography(read("papers_zpz.bib"))
-    for item in bib.values().rev() [
+    let items = array(bib.values())
+    let sorted = items.sort((a, b) => {
+      let year_a = int(a.fields.year)
+      let year_b = int(b.fields.year)
+      if year_a > year_b { -1 } else if year_a < year_b { 1 } else { 0 }
+    })
+    for item in sorted [
       #let data = item.fields
       - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
     ]
