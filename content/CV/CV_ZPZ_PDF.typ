@@ -2,11 +2,35 @@
 #set page(height: auto)
 #show link: it => underline(it)
 
-= Pinzhong Zheng: 
+// 格式化作者姓名为简写格式
+#let format-authors(item) = {
+  let authors = item.parsed_names.at("author", default: none)
+  if authors == none {
+    return item.fields.author
+  }
+  let formatted = ()
+  for author in authors {
+    let given = author.given
+    let family = author.family
+    // 提取首字母（处理多个名字的情况，如 "Emily M." -> "E. M."）
+    let parts = given.split(" ")
+    let initials = ()
+    for part in parts {
+      if part.len() > 0 {
+        initials.push(part.slice(0, 1) + ".")
+      }
+    }
+    let formatted-name = initials.join(" ") + " " + family
+    formatted.push(formatted-name)
+  }
+  formatted.join(", ")
+}
+
+= Pinzhong Zheng:
 
 Website: #link("https://zhengpinzhong.github.io/")[zhengpinzhong.github.io]
-#h(3em)  
-Email: #link("mailto:pinzhong.zheng@connect.polyu.hk", "pinzhong.zheng@connect.polyu.hk") \ 
+#h(3em)
+Email: #link("mailto:pinzhong.zheng@connect.polyu.hk", "pinzhong.zheng@connect.polyu.hk") \
 Address: M303, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong
 
 == Education
@@ -19,10 +43,17 @@ Address: M303, The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kon
 
 #{
   let bib = load-bibliography(read("../Pubs/papers_zpz.bib"))
-  for item in bib.values().rev() [
-    #let data = item.fields
-    - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
-  ]
+  let items = array(bib.values())
+  let sorted = items.sorted(key: it => int(it.fields.year)).rev()
+  let enum_items = ()
+  for item in sorted {
+    let data = item.fields
+    let authors = format-authors(item)
+    enum_items.push(
+      [#authors, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]],
+    )
+  }
+  enum(..enum_items)
 }
 
 

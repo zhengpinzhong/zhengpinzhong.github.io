@@ -2,6 +2,30 @@
 #show: template.with(title: "Pinzhong Zheng | Publications")
 #import "@preview/citegeist:0.2.0": load-bibliography
 
+// 格式化作者姓名为简写格式
+#let format-authors(item) = {
+  let authors = item.parsed_names.at("author", default: none)
+  if authors == none {
+    return item.fields.author
+  }
+  let formatted = ()
+  for author in authors {
+    let given = author.given
+    let family = author.family
+    // 提取首字母（处理多个名字的情况，如 "Emily M." -> "E. M."）
+    let parts = given.split(" ")
+    let initials = ()
+    for part in parts {
+      if part.len() > 0 {
+        initials.push(part.slice(0, 1) + ".")
+      }
+    }
+    let formatted-name = initials.join(" ") + " " + family
+    formatted.push(formatted-name)
+  }
+  formatted.join(", ")
+}
+
 
 
 = Publications
@@ -31,8 +55,9 @@
       for item in sorted {
         if item.fields.year == year {
           let data = item.fields
+          let authors = format-authors(item)
           enum_items.push(
-            [#data.author, "#data.title," #emph(data.archiveprefix):#data.eprint, #data.year. #link(data.url)[arXiv:#data.eprint]],
+            [#authors, "#data.title," #emph(data.archiveprefix):#data.eprint, #data.year. #link(data.url)[arXiv:#data.eprint]],
           )
         }
       }
@@ -66,8 +91,9 @@
       for item in sorted {
         if item.fields.year == year {
           let data = item.fields
+          let authors = format-authors(item)
           enum_items.push(
-            [#data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]],
+            [#authors, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]],
           )
         }
       }
