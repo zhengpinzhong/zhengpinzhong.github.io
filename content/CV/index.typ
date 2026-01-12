@@ -25,10 +25,14 @@
   let bib = load-bibliography(read("../Pubs/papers_zpz.bib"))
   let items = array(bib.values())
   let sorted = items.sorted(key: it => int(it.fields.year)).rev()
-  for item in sorted [
-    #let data = item.fields
-    - #data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]
-  ]
+  let enum_items = ()
+  for item in sorted {
+    let data = item.fields
+    enum_items.push(
+      [#data.author, "#data.title," #emph(data.journal), #data.year. DOI: #link(data.url)[#data.doi]],
+    )
+  }
+  enum(..enum_items)
 }
 
 
