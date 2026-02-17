@@ -1,5 +1,8 @@
 #import "../index.typ": template, tufted
-#show: template.with(title: "GitHub 网站部署")
+#show: template.with(
+  title: "GitHub 网站部署",
+  description: "GitHub 网站部署文档，介绍了如何使用 GitHub Actions 将网站部署到 GitHub Pages。",
+)
 
 = GitHub 网站部署
 
@@ -9,7 +12,7 @@
 
 1. 转到你的 GitHub 仓库；
 2. 导航至 _Settings_，然后点击 _Pages_；
-3. 在 _Build and deployment_ 下, 选择 _GitHub Actions_ 作为源。
+3. *在 _Build and deployment_ 下, 选择 _GitHub Actions_ 作为源。*
 
 现在，每次你推送代码到 main 分支时，你的网站都会自动构建和部署。
 

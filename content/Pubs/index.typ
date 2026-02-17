@@ -1,6 +1,11 @@
 #import "../index.typ": template, tufted
-#show: template.with(title: "Pinzhong Zheng | Publications")
+#show: template.with(
+  title: "Pinzhong Zheng | Publications",
+  description: "Publications of Pinzhong Zheng",
+  lang: "en",
+)
 #import "@preview/citegeist:0.2.0": load-bibliography
+
 
 // 格式化作者姓名为简写格式
 #let format-authors(item) = {

@@ -1,10 +1,12 @@
 #import "../index.typ": template, tufted
-#show: template.with(title: "Pinzhong Zheng |Blog")
+#show: template.with(
+  title: "Blog",
+  description: "Some blog examples",
+)
 
-= Blog
+= 博客 / Blog
 
-To be updated soon.
-
+中文博客样例可参考 #link("https://yousa-mirage.github.io/Blog")[我的个人网站]。
 
 == 2025
 

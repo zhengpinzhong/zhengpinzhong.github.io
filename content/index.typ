@@ -1,27 +1,21 @@
 #import "../config.typ": template, tufted
 #show: template
 
-
 // tufted.margin-note 可以让你在边栏中放置内容
 // 宽大的边栏是 tufte 样式的特点，将注释放于其中并与正文并排，便于对照
-/*
-#tufted.margin-note[
-  PINZHONG ZHENG (郑品忠)
-]
-*/
-
 #tufted.margin-note({
-  image("imgs/zpz_daffcy.webp")
+image("imgs/zpz_daffcy.webp")
 })
 
 /*
 #tufted.margin-note[
-  凤头潜鸭（学名 _Aythya fuligula_）是一种中型潜水鸭，原生于欧亚大陆。凭借卓越的潜水能力，它们能深入水下捕食猎物。
+PINZHONG ZHENG (郑品忠)
 ]
 #tufted.margin-note[
   The tufted duck (_Aythya fuligula_) is a medium-sized diving duck native to Eurasia. Known for its diving ability, it can plunge to great depths to forage for food.
 ]
 */
+
 
 = About Me
 
@@ -52,9 +46,6 @@ I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong 
 
 
 
-
-
-
 /*
 = Tufted 博客模板
 
@@ -62,7 +53,7 @@ I am pursuing a Ph.D. in the Department of Applied Mathematics at The Hong Kong 
 
 #figure(caption: "网站示例")[#image("imgs/devices.webp")]
 
-如果你在浏览器中看到了本页面，说明你已经成功安装了依赖、成功构建了网页、成功运行了预览。恭喜你！
+如果你通过访问本地地址（运行 `preview` 或其他本地服务）中看到了本页面，说明你已经成功安装了依赖、成功构建了网页、成功运行了预览。恭喜你！
 
 想要使用这个模板编写你自己的网站，你需要学会使用 Typst。放心，非常好上手。
 

@@ -1,6 +1,11 @@
 #import "../index.typ": template, tufted
-#show: template.with(title: "Pinzhong Zheng | CV")
+#show: template.with(
+  title: "Edward R. Tufte",
+  description: "CV of Edward R. Tufte",
+  lang: "en"
+)
 #import "@preview/citegeist:0.2.0": load-bibliography
+
 
 // 格式化作者姓名为简写格式
 #let format-authors(item) = {
@@ -61,10 +66,18 @@
 }
 
 
-
-
-
 /*
+= Edward R. Tufte
+
+#tufted.margin-note[
+  Statistician, Artist, and Professor Emeritus \
+  Website: #link("https://www.edwardtufte.com")[edwardtufte.com] \
+  Email: #link("mailto:noreply@edwardtufte.com", "noreply@edwardtufte.com")
+]
+
+#link("CV-PDF.pdf")[[PDF version is available! Click me!]]\
+#link("CV-PDF.pdf")[[点击这里查看 PDF 版本！]]
+
 Research in statistical evidence and analytical design for information visualization, integrating principles from statistics, graphic design, and cognitive science for the effective presentation of quantitative data.
 
 == Experience
