@@ -4,7 +4,11 @@
 #import "@preview/citegeist:0.2.0": load-bibliography
 #import "@preview/cmarker:0.1.8"
 #import "@preview/mitex:0.2.6": *
-#show: template.with(title: "Typst 功能速览与样例")
+
+#show: template.with(
+  title: "Typst 功能速览与样例",
+  description: "Typst 功能速览与样例文档，展示了 Typst 的功能以及在当前网页模板下的效果。",
+)
 
 = Typst 功能速览与样例
 
@@ -16,7 +20,7 @@
   如果你之前从未接触过 Typst 和标记语言，建议先阅读 #link("https://github.com/Yousa-Mirage/Tufted-Blog-Template/wiki/Typst-%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8%E8%B5%84%E6%96%99")[Wiki 页面] 及其中的资料，进行了解和学习后再来阅读本文档。
 ]
 
-== 1. 字体与文本修饰
+== 1. 字体与文本修饰 <ch1>
 
 这里展示了 *粗体*、_斜体_、#underline[下划线]、#strike[删除线]、#overline[上划线]、上标 E=mc#super[2]、下标 H#sub[2]O。重要内容可以使用 #highlight[高亮标记]。
 
@@ -36,16 +40,20 @@
 这是新的一行。
 ```
 
+目前 `#line()` 函数还不支持 HTML 导出，但可以使用 `#html.hr()` 添加分隔线。
+
+#html.hr()
+
 如果要显示特殊字符，需要转义：\* \_ \# \$ \@
 
 ```typ
 如果要显示特殊字符，需要转义：\* \_ \# \$ \@
 ```
 
-网站的视觉外观由 CSS 控制，你目前不能在 Typst 中直接改变文字的 #text(fill: blue)[颜色]、#text(size: 14pt)[大小] 或 #text(font: "Liu Jian Mao Cao")[字体] 等样式。
+网站的视觉外观由 CSS 控制，你目前不能在 Typst 中直接改变文字的 #text(fill: blue)[颜色]、#text(size: 14pt)[大小] 或 #text(font: "Liu Jian Mao Cao")[字体] 等样式。如需修改，请在 `assets/custom.css` 文件中添加自定义 CSS 样式。
 
 ```typ
-网站的视觉外观由 CSS 控制，你目前不能在 Typst 中直接改变文字的 #text(fill: blue)[颜色]、#text(size: 14pt)[大小] 或 #text(font: "Liu Jian Mao Cao")[字体] 等样式。
+你目前不能在 Typst 中直接改变文字的 #text(fill: blue)[颜色]、#text(size: 14pt)[大小] 或 #text(font: "Liu Jian Mao Cao")[字体] 等样式。
 ```
 
 
@@ -152,7 +160,6 @@
 ]
 ```
 
-// TODO:
 你可以将参考文献导出为 `.bib` 文件，使用 `bibliography()` 函数将其引用到 Typst中，然后就可以使用 `@` 引用它，就像这样@tufte1973relationship。\
 默认会将使用的参考文献显示在调用 `bibliography()` 函数的位置。模板暂时不支持自动将参考文献展示在边栏中，但你可以手动引用#footnote[Tufte, E. R. (1973). The Relationship between Seats and Votes in Two-Party Systems. _American Political Science Review, 67_(2), 540～554. https://doi.org/10.2307/1958782]。
 
@@ -203,26 +210,20 @@
 
 #figure(caption: "这也是鸭鸭。")[
   #image("../../imgs/tufted-duck-female-with-duckling.webp", width: 250pt)
-]
+]<鸭鸭>
 
-#figure(caption: "这是只猴！")[
-  #image("../../imgs/gorilla.webp", height: 250pt)
-]
+#image("../../imgs/gorilla.webp", height: 250pt)
 
 ```typ
 #figure(caption: "这也是鸭鸭。")[
   #image("../../imgs/tufted-duck-female-with-duckling.webp", width: 250pt)
 ]
 
-#figure(caption: "这是只猴！")[
-  #image("../../imgs/gorilla.webp", height: 250pt)
-]
+#image("../../imgs/gorilla.webp", height: 250pt)
 ```
 
 
-== 7. 表格
-
-HTML 导出还不支持调整列宽、表格样式等，甚至目前连边框都没有。现在推荐直接#link("sample-PDF.pdf")[添加 PDF] 或表格图片。
+== 7. 表格<tbl1>
 
 你可以使用 `table()` 函数创建简单的表格：
 
@@ -246,7 +247,7 @@ HTML 导出还不支持调整列宽、表格样式等，甚至目前连边框都
 ]
 ```
 
-更推荐使用橘子大佬写的 `tablem` 包，根据 markdown 表格格式生成表格：
+更推荐使用 #link("https://blog.orangex4.workers.dev/")[\@OrangeX4] 大佬写的 #link("https://typst.app/universe/package/tablem")[`tablem`] 包，根据 markdown 表格格式生成表格：
 
 #tablem[
   | *Name* | *Location* | *Height* | *Score* |
@@ -266,6 +267,8 @@ HTML 导出还不支持调整列宽、表格样式等，甚至目前连边框都
 ]
 ```
 
+目前还不支持复杂的自定义表格设计。当然，你也可以直接 #link("sample-PDF.pdf")[添加 PDF] 或表格图片。
+
 == 8. 代码块
 
 使用 ```` ``` ```` 包裹代码来添加代码块，支持语法高亮，也可以和图片、表格一样使用 `figure()` 添加标题。我修改了代码块样式，并添加了行号和复制按钮。
@@ -277,7 +280,7 @@ HTML 导出还不支持调整列宽、表格样式等，甚至目前连边框都
       if n <= 1: return n
       return fib(n-1) + fib(n-2)
   ```
-]
+]<code1>
 
 #figure(caption: "我最近在学习 Rust。")[
   ```rs
@@ -304,7 +307,7 @@ HTML 导出还不支持调整列宽、表格样式等，甚至目前连边框都
 
 目前 Typst 编译 HTML 还不支持段落对齐方式和分栏，但你可以#link("sample-PDF.pdf")[在 PDF 中实现]。这在简历、分栏论文、演示文稿中非常有用。
 
-你可以使用同样是橘子大佬写的定理包 `theorion` 来实现各种特殊的段落样式，例如：
+你可以使用同样是 #link("https://blog.orangex4.workers.dev/")[\@OrangeX4] 大佬写的定理包 #link("https://typst.app/universe/package/theorion")[`theorion`] 来实现各种特殊的段落样式，例如：
 
 #quote-box[
   这是一个引用块。你可以在这里引用相当长的内容。你可以在这里引用相当长的内容。你可以在这里引用相当长的内容。你可以在这里引用相当长的内容。支持换行、分段，甚至可以在其中添加新的引用块。
@@ -336,12 +339,10 @@ HTML 导出还不支持调整列宽、表格样式等，甚至目前连边框都
 
 == 10. 数学公式
 
-#quote-box[目前 FireFox 浏览器显示公式可能存在问题。]
-
 Typst 使用 `$ $`包裹公式。行内公式嵌入在文字中，写法是 `$ $` 内紧跟公式内容，例如 $f(x) = x^2$。
 
 ```typ
-$f(x) = x^2$
+例如 $f(x) = x^2$。
 ```
 
 而块级公式独占一行，写法是 `$ $` 与公式内容之间存在空格，例如 $ A = pi r^2 $
@@ -353,6 +354,9 @@ $ A = pi r^2 $
 包含分式、根号、求和与积分：
 $ integral_0^infinity e^(-x^2) d x = sqrt(pi) / 2 $
 $ sum_(k=0)^n k = 1 + ... + n = (n(n+1)) / 2 $
+$
+  P(A | B) = (P(B | A) P(A)) / P(B) = (P(B | A) P(A)) / (sum_(i=1)^n P(B | A_i) P(A_i))
+$
 
 ```typ
 $ integral_0^infinity e^(-x^2) d x = sqrt(pi) / 2 $
@@ -394,12 +398,55 @@ $
 ]
 ```
 
+超长的块级公式（突破屏幕宽度）：
+
+$
+  Psi(x, t) = sum_(n=1)^infinity c_n phi_n(x) e^(-i E_n t / planck) = integral_(-infinity)^(+infinity) tilde(Psi)(k) e^(i k x - i omega(k) t) d k = e^(i (k x - omega t)) + sum_(l=1)^infinity a_l e^(i (k_l x + phi_l - omega_l t))
+$
+
+$
+  cal(L)_(S M) = underbrace(- 1/4 B_(mu nu) B^(mu nu) - 1/8 tr(bold(W)_(mu nu) bold(W)^(mu nu)) - 1/2 tr(bold(G)_(mu nu) bold(G)^(mu nu)), "Gauge Bosons")
+  + underbrace(sum_(j=1)^3 (bar(Q)_(L j) i D slash Q_(L j) + bar(u)_(R j) i D slash u_(R j) + bar(d)_(R j) i D slash d_(R j) + bar(L)_(L j) i D slash L_(L j) + bar(e)_(R j) i D slash e_(R j)), "Fermions Kinetic Terms")
+  + underbrace((D_mu phi)^dagger (D^mu phi) - mu^2 phi^dagger phi - lambda (phi^dagger phi)^2, "Higgs Sector")
+  - underbrace(sum_(i, j=1)^3 (y_(i j)^u bar(Q)_(L i) tilde(phi) u_(R j) + y_(i j)^d bar(Q)_(L i) phi d_(R j) + y_(i j)^e bar(L)_(L i) phi e_(R j) + h.c.), "Yukawa Couplings")
+$
+
 更加复杂的公式和符号写法可参考#link("https://typst-doc-cn.github.io/docs/reference/math/")[官方文档]。
 
 
 == 11. 交叉引用
 
-TODO
+Typst 支持交叉引用功能。你可以为标题、图片、代码块等元素添加标签，然后在文档的其他位置引用它们。
+
+这里链接到 @ch1 部分。\
+这里链接到 @code1 部分。\
+这里链接到 @鸭鸭 部分。\
+这里链接到 @tbl1 部分。
+
+```typ
+这里链接到 @ch1 部分。\
+这里链接到 @code1 部分。\
+这里链接到 @鸭鸭 部分。\
+这里链接到 @tbl1 部分。
+```
+
+对应的标签写法如下：
+
+```typ
+== 1. 字体与文本修饰 <ch1>
+
+#figure(caption: "我会 Python。")[
+  ... code block ...
+]<code1>
+
+#figure(caption: "这也是鸭鸭。")[
+  ... image ...
+]<鸭鸭>
+
+#figure(caption: [`table()` 函数生成的表格])[
+  ... table ...
+]<tbl1>
+```
 
 == 12. 编程特性
 
@@ -409,7 +456,7 @@ Typst 不但是一个标记排版语言，还是一门编程排版语言：
 #let name = "Typst"
 #if name == "Typst" [
   #for i in range(3) [
-    这是 Typst！
+    这是 Typst #i！
   ]
 ] else [
   这不是 Typst。
@@ -460,10 +507,16 @@ Typst 不但是一个标记排版语言，还是一门编程排版语言：
 #cmarker.render(md-content, math: mitex, scope: scope)
 ```
 
-将 `"tufted-titmouse.md"` 渲染为以下内容：
+会将 `"tufted-titmouse.md"` 渲染为以下内容：
 
-#let scope = (image: (source, alt: none, format: auto) => figure(image(source, alt: alt, format: format)))
+#html.hr()
+
+#let scope = (
+  image: (source, alt: none, format: auto) => figure(image(source, alt: alt, format: format)),
+)
 #let md-content = read("tufted-titmouse.md")
 #cmarker.render(md-content, math: mitex, scope: scope)
+
+#html.hr()
 
 `"tufted-titmouse.md"` 渲染完毕。
