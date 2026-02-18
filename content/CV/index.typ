@@ -1,7 +1,7 @@
 #import "../index.typ": template, tufted
 #show: template.with(
-  title: "Edward R. Tufte",
-  description: "CV of Edward R. Tufte",
+  title: "Pinzhong Zheng | CV",
+  description: "CV of Pinzhong Zheng",
   lang: "en"
 )
 #import "@preview/citegeist:0.2.0": load-bibliography
